@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Page</title>
+</head>
+<body>
+<form method="post" th:action="@{/products/{id}(id=${product.getId()})}">
+    <label>Product Name </label><input type="text" name="product_name" th:value="${product.getProductName()}"><br><br>
+    <label>Product Type </label><input type="text" name="product_type" th:value="${product.getProductType()}"><br><br>
+    <label>Product Count </label><input type="text" name="product_count" th:value="${product.getProductCount()}"><br><br>
+    <input type="submit" value="Update Product"><br>
+</form>
+</body>
+</html>

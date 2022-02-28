@@ -1,0 +1,10 @@
+Query Parameter /search.php?id=5&name=news
+Path Variables /search/news/5
+Body Parameter
+
+POST /search.php
+-----
+-----
+-----
+
+name=news&id=5
